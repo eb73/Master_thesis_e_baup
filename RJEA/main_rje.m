@@ -2,8 +2,8 @@
 % Main file used for the numerical experiments.
 % Relies on a struct 'user' or default variables, to specify setting.
 % user may contain: example (which matrices to use), Nsamples (number of
-% runs), nb_trials (number of initial trials used = k), rq_type
-% ('one-side', 'two-sided', 'both'), method
+% runs), nb_trials (number of initial trials used = k), method,
+% rq_type ('one-side', 'two-sided', 'both')
 
 addpath 'RJEA_He_Plestenjak'  % for reference method & other auxiliaries
 
