@@ -16,7 +16,7 @@ Code files are:
 
 The folder `caltech-101` contains data used for the Caltech example. The original data can be found at https://data.caltech.edu/records/mzrjq-6wc02, the preprocessed mat file was given by A. Pados [3].
 
-To run the experiment, simply change the variable 'example' in the third cell to choose betwee, the synthetic graph 1, the weighted SBM (synthetic graph 2) or the real-world example from the Caltech dataset. Then run the notebook. The variable 'nb_repet' controls how many trials we do of each method, so that the results are then average over these trials. The results can be visualized in the second to last cell, and are exported to a LaTeX table. They represent the average of each measure with 95% confidence interval. The last cell also allows to save them as pickle files separately (mean, std, confidence interval).
+To run the experiment, simply change the variable 'example' in the third cell to choose between the synthetic graph 1, the weighted SBM (synthetic graph 2) or the real-world example from the Caltech dataset. Then run the notebook. The variable 'nb_repet' controls how many trials we do of each method, so that the results are then averaged over these trials. The results can be visualized in the second to last cell, and are exported to a LaTeX table. They represent the average of each measure with 95% confidence interval. The last cell also allows to save them as pickle files separately (mean, std, confidence interval).
 
 
 ## RJEA
@@ -25,7 +25,7 @@ The main scripts are:
 - `main_rootfinding`: experiment about rootfinding application
 - `analysis_nb_trials`: analysis method vs number of trials
 - `analysis_n_ex1`: analysis method vs n (size of matrices)
-- `test_greedymatch`: auxiliary test to compare our greedy matchinf with Matlab's built-in (in the appendix of the thesis)
+- `test_greedymatch`: auxiliary test to compare our greedy matching with Matlab's built-in (in the appendix of the thesis)
 
 The other files are functions and auxiliaries. In particular, `config` does the setup of the experiments, `newRayleighOpt` redirects to the right solver depending on the configuration, and `new[method_name]` is the implementation of our RJEA-based algorithm _method_name_.
 The folder `RJEA_He_Plestenjak` is a modified version of [1] for the original method.
@@ -48,7 +48,7 @@ where field_name and var are summarized in the table below.
 
 About the 'example' field:
 - 0.1 corresponds to Example 5.1 of [2]
-- 1.1-1.3 corresponds to our Example 4.1 with n=10,50,100 respectively.
+- 1.1-1.3 correspond to our Example 4.1 with n=10,50,100 respectively.
 - 1.5 corresponds to our Example 4.2
 - 2.1 and 2.2 correspond to Example 5.3 of [2], which is our Example 4.3
 - (4.1 and 4.2 are past examples that were not analyzed further due to the small size of the matrices.)
